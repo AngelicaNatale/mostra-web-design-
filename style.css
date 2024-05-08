@@ -1,0 +1,334 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+   
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(immagini/immagine\ home\ sitoweb.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+}
+.text-box h1{
+    font-size: 120px;
+    text-align: left;
+    line-height: 100px;
+}
+.text-box p{
+    margin: 0px 0 40px;
+    font-size: 45px;
+    color: #fff;
+   
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+font-size: 13px;
+background: transparent;
+position: relative;
+cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-widht: 700px){
+   .text-box h1{
+    font-size: 20px;
+ }
+    .nav-links ul li{
+    display: block;
+ }
+  .nav-links{
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+ }
+ nav .fa{
+    display: block;
+    color: #f44336;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+ }
+ .nav-links ul{
+    padding: 30px;
+ }
+}
+
+
+
+.artisti{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+p{
+  color: #777;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+   padding: 10px;
+   text-align: left;
+}
+
+.container{
+    max-width: 1200px;
+    width: 95%;
+}
+
+
+.artisti-col img{
+    width: 300px;
+}
+
+.layer{
+    background: transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: o.5s;
+}
+
+.layer:hover{
+    background: rgba (226,0,0,0,7);
+   
+
+}
+
+
+img {
+    max-width: auto;
+    display: block;
+}
+
+.contenitore {
+	max-width: 1100px;
+	margin: 0 auto; 
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    gap: 32px;
+}
+
+.artista {
+    position: relative;
+}
+
+.artista img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.artista a:before { 
+    content: "";
+    background-color: rgba(266,0,0,0.7);
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+
+
+
+
+.artista a span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 21px;
+    color: #fff;
+    display: none;
+}
+
+
+.artista a:hover span, .artista a:hover:before {
+    display: block;
+}
+
+footer {
+    background-image: url(immagini/immagine\ home\ sitoweb.webp);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container-icone{
+    margin-bottom: 10px;
+}
+
+.container-icone a{
+display: inline-block;
+margin: 0 10px;
+}
+.container-icone img{
+    width: 15px;
+    height: auto;
+
+}
+
+.container p{
+    margin: 0;
+}
+
+
+/*-----Mostra-----*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(immagini/immagine\ home\ sitoweb.webp);
+background-position: center;
+background-size: cover;
+text-align: center;
+color:#fff;
+}
+
+.sub-header h1{
+    margin-top: 100px;
+}
+
+.Mostra{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.column{
+    float: left;
+    width: 50%;
+}
+
+.column img{
+width: 100%;
+
+}
+
+
+.column h1{
+    text-align: left;
+    padding-top: 0;
+}
+
+.column p{
+    padding: 15px 0 25;
+
+}
+
+/*------- Info ---------*/
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+
+.info{
+    width: 80%;
+    margin:auto;
+}
+
+.column{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+
+}
+
+.column div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
